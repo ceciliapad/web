@@ -94,8 +94,8 @@ body {
 }
 .content_title h4{
   color:var(--content_title_clr);
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 17px;
 }
 .link-highlight a{
    color:#0a58ca;
@@ -345,6 +345,8 @@ h2.heading {
   text-align: center;
   position: relative;
 }
+
+
 .custom-heading:after {
   content: "";
   position: absolute;
@@ -352,9 +354,37 @@ h2.heading {
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
-  height: 3px;
+  height: 2px;
   background: var(--title_clr);
 }
+
+
+.custom-headings {
+  color: var(--title_clr);
+  font-size: 20px !important;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-align: center;
+  position: relative;
+}
+
+
+
+
+.custom-headings:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: var(--title_clr);
+}
+
+
+
+
 .interest-item {
   background: var(--primary-light-bg);
   padding: 15px 10px;
@@ -377,6 +407,54 @@ h2.heading {
 .interest-text {
   font-size: 16px;
   line-height: 1.5;
+}
+/*============================================================= funding css */
+.funding{
+  background: var(--primary-light-bg);
+}
+.funding-item {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-weight: 600;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.funding-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.funding-list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.funding-list li {
+  padding: 12px 0;
+  position: relative;
+  padding-left: 40px;
+  color: var(--content_title_clr);
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.funding-list li:last-child {
+  border-bottom: none;
+}
+
+.funding-icon {
+  position: absolute;
+  left: 5px;
+  color:var(--icon-clr);
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -403,6 +481,53 @@ h2.big-heading{
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
  
 } */
+
+
+.project-card {
+  border: none;
+  background: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  height: 100%;
+}
+.project-card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.project-img-container {
+  overflow: hidden;
+  height: 200px;
+}
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+.project-card:hover .project-img {
+  transform: scale(1.08);
+}
+.project-card .content_title h4 {
+  padding: 20px;
+  line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
