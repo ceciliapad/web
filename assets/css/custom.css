@@ -672,8 +672,12 @@ h2.big-heading{
 .press_coverage{
   background: var(--primary-light-bg);
 }
-.press_img img {
-  width: 50%;
+.press-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
 }
 .press_content{
   border-left: 4px solid var(--icon-clr);
@@ -683,6 +687,13 @@ h2.big-heading{
 .presss_content img:hover{
   transition: 0.2s;
 transform: translateY(-5px)
+}
+
+.press-poster-img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 .press_img {
   text-align: center;
