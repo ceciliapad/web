@@ -882,3 +882,18 @@ h2.big-heading{
 }
 }
 
+/* Match paragraph styling across all project cards */
+.other_project_content p {
+  font-size: 15px !important;
+  font-weight: 400;
+}
+
+/* Standardize all project image heights */
+.other_project_content img,
+.project-card img,
+.project-img {
+  height: 250px !important;
+  width: 100%;
+  object-fit: cover;
+}
+
