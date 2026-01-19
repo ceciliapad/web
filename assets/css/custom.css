@@ -897,3 +897,8 @@ h2.big-heading{
   object-fit: cover;
 }
 
+.tool-logo{
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: contain;
+}
