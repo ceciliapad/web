@@ -4,39 +4,44 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cecilia Padilla-Iglesias - Tools</title>
+    <title>Tools | GPS Lab</title>
+    <meta name="description" content="Open-source software co-developed by the GPS Lab.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- custom CSS -->
     <link rel="stylesheet" href="./assets/css/custom.css">
-
   </head>
+
   <body>
 
-   <!----------------------------------- top banner --------------------------------->
+ <!----------------------------------- top banner --------------------------------->
 <div class="top_banner">
-  <div class="container">
-   <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a> or <a href="mailto:cp654@cam.ac.uk">cp654@cam.ac.uk</a></p>
-  </div>
+ <div class="container">
+  <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i>Interested in joining the lab? Email <a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
  </div>
- 
-<!------------------------------------------ Navbar section ------------------------->
+</div>
+
+ <!------------------------------------------ Navbar section ------------------------->
      <div class="Navbarr navbar-light bg-white py-2 sticky-top shadow-sm">
        <div class="container">
-         <nav class="navbar navbar-expand-lg">
-            <!-- Brand Name -->
-           <a class="profile-name" href="index.html">Cecilia Padilla-Iglesias, PhD</a>
-           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <nav class="navbar navbar-expand-xl">
+            <!-- Brand -->
+           <a class="navbar-brand-logo" href="index.html"><img src="assets/images/gps-logo.png" alt="GPS Lab: Genotype-Phenotype Evolution in Space"></a>
+           <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="toggler-icon top-bar"></span>
              <span class="toggler-icon middle-bar"></span>
              <span class="toggler-icon bottom-bar"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-xl-center">
               <!-- Navbar items -->
              <li class="nav-item" id="home">
-               <a class="nav-link" aria-current="page" href="index.html">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
+             </li>
+             <li class="nav-item" id="team">
+               <a class="nav-link" href="team.html">Team</a>
              </li>
              <li class="nav-item" id="research">
                <a class="nav-link" href="research.html">Research</a>
@@ -44,20 +49,24 @@
              <li class="nav-item" id="projects">
                <a class="nav-link" href="projects.html">Projects</a>
              </li>
+             <li class="nav-item" id="teaching">
+               <a class="nav-link" href="teaching.html">Teaching</a>
+             </li>
              <li class="nav-item" id="tools">
                <a class="nav-link" href="tools.html">Tools</a>
              </li>
-             <li class="nav-item" id="science-communication">
-               <a class="nav-link" href="science-communication.html">Science Communication</a>
-             </li>
-             <li class="nav-item" id="press-coverage">
-               <a class="nav-link" href="press-coverage.html">Press Coverage</a>
-             </li>
-             <li class="nav-item" id="opportunities">
-               <a class="nav-link" href="opportunities.html">Opportunities</a>
+             <li class="nav-item dropdown" id="outreach">
+               <a class="nav-link dropdown-toggle" href="#" id="outreachDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach<i class="fa-solid fa-chevron-down"></i></a>
+               <ul class="dropdown-menu" aria-labelledby="outreachDropdown">
+                 <li><a class="dropdown-item" href="science-communication.html">Science Communication</a></li>
+                 <li><a class="dropdown-item" href="press-coverage.html">Press Coverage</a></li>
+               </ul>
              </li>
              <li class="nav-item" id="contact">
                <a class="nav-link" href="contact.html">Contact</a>
+             </li>
+             <li class="nav-item" id="opportunities">
+               <a class="nav-link nav-cta" href="opportunities.html">Join the lab</a>
              </li>
            </ul>
            </div>
@@ -65,18 +74,21 @@
        </div>
      </div>
 
- <!------------------------------------------intro title section ------------------------->
- <div class=" position-relative d-flex align-items-center justify-content-center py-5">
-  <h1 class="display-1 shape-bg-title text-uppercase text-white" style="-webkit-text-stroke: 0.2px #dee2e6;font-size:5rem;font-weight:900">Tools</h1>
-  <h1 class="intro_title position-absolute">Tools</h1>
-</div>
+ <!------------------------------------------ page title section ------------------------->
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Open science</span>
+    <h1>Tools</h1>
+    <p>R packages we co-develop to make spatial, genetic and reproducible research easier.</p>
+  </div>
+</header>
 
 
 <section>
   <div class="container py-5">
     <div class="pb-4">
       <div class="link-highlight">
-        <p> I am committed to improving reproducibility in scientific research. Because of that, I am actively involved in the development of software to facilitate this endeavor. Here are some R packages I have co-developed with the <a href="https://evolecolgroup.github.io/website/" target="_blank">Evolutionary Ecology Group</a> at the University of Cambridge.</p>
+        <p>The lab is committed to improving reproducibility in scientific research, and we are actively involved in developing software to support it. Here are some R packages we have co-developed with the <a href="https://evolecolgroup.github.io/website/" target="_blank">Evolutionary Ecology Group</a> at the University of Cambridge.</p>
       </div>
     </div>
 
@@ -118,7 +130,8 @@
           <p><code>geoGraph</code> aims at implementing graph approaches for geographic data. In <code>geoGraph</code>, a given geographic area is modeled by a regular grid, where each vertex has a set of spatial coordinates and a set of attributes. 'Traveling' within the geographic area can then be easily modeled as moving between connected vertices. The cost of moving from one vertex to another can be defined according to attribute values, which allows for instance to define friction routes based on climate.</p>
           <p class="mt-3">
             <a href="https://evolecolgroup.github.io/geograph/index.html" target="_blank" class="btn btn-outline-dark btn-sm me-2"><i class="fas fa-book me-1"></i> Documentation</a>
-            <a href="https://github.com/EvolEcolGroup/geograph" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github me-1"></i> GitHub</a>
+            <a href="https://github.com/EvolEcolGroup/geograph" target="_blank" class="btn btn-outline-dark btn-sm me-2"><i class="fab fa-github me-1"></i> GitHub</a>
+            <a href="https://www.biorxiv.org/content/10.64898/2026.10.14.759071v1" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fas fa-file-lines me-1"></i> Preprint</a>
           </p>
         </div>
       </div>
@@ -175,15 +188,41 @@
   </div> 
 </section> 
 
-<!------------------------------------------ footer section ------------------------->
-<footer class="bg-dark p-4">
+ <!------------------------------------------ footer section ------------------------->
+<footer class="lab-footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer_content">
-          <p class="text-white text-center mb-0">Copyright © 2026 Cecilia Padilla-Iglesias | All Rights Reserved</p>
-        </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <img class="footer-logo mb-3" src="assets/images/gps-logo-cream.png" alt="GPS Lab logo">
+        <p>Genotype-Phenotype Evolution in Space. Human Origins Cluster of Excellence, University of Tübingen.</p>
       </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>The lab</h6>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>More</h6>
+        <ul>
+          <li><a href="science-communication.html">Science Communication</a></li>
+          <li><a href="press-coverage.html">Press Coverage</a></li>
+          <li><a href="opportunities.html">Join the lab</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Find us</h6>
+        <p>Hölderlinstrasse 12, Office S558<br>72074 Tübingen, Germany</p>
+        <p class="mt-2"><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="text-center">Copyright © 2026 GPS Lab, University of Tübingen | All Rights Reserved</p>
     </div>
   </div>
 </footer>
@@ -191,7 +230,7 @@
 
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
 

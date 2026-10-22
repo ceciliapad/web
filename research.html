@@ -4,40 +4,44 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cecilia Padilla-Iglesias - Research</title>
-    <!-- Bootstrap CSS -->
+    <title>Research | GPS Lab</title>
+    <meta name="description" content="Publications from the GPS Lab.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- custom CSS -->
     <link rel="stylesheet" href="./assets/css/custom.css">
-</head>
-<body>
+  </head>
 
+  <body>
 
  <!----------------------------------- top banner --------------------------------->
- <div class="top_banner">
-  <div class="container">
-   <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a> or <a href="mailto:cp654@cam.ac.uk">cp654@cam.ac.uk</a></p>
-  </div>
+<div class="top_banner">
+ <div class="container">
+  <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i>Interested in joining the lab? Email <a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
  </div>
- 
+</div>
 
  <!------------------------------------------ Navbar section ------------------------->
      <div class="Navbarr navbar-light bg-white py-2 sticky-top shadow-sm">
        <div class="container">
-         <nav class="navbar navbar-expand-lg">
-            <!-- Brand Name -->
-           <a class="profile-name" href="index.html">Cecilia Padilla-Iglesias, PhD</a>
-           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" ainteresta-controls="navbarNav" ainteresta-expanded="false" ainteresta-label="Toggle navigation">
+         <nav class="navbar navbar-expand-xl">
+            <!-- Brand -->
+           <a class="navbar-brand-logo" href="index.html"><img src="assets/images/gps-logo.png" alt="GPS Lab: Genotype-Phenotype Evolution in Space"></a>
+           <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="toggler-icon top-bar"></span>
              <span class="toggler-icon middle-bar"></span>
              <span class="toggler-icon bottom-bar"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-xl-center">
               <!-- Navbar items -->
              <li class="nav-item" id="home">
-               <a class="nav-link" ainteresta-current="page" href="index.html">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
+             </li>
+             <li class="nav-item" id="team">
+               <a class="nav-link" href="team.html">Team</a>
              </li>
              <li class="nav-item" id="research">
                <a class="nav-link" href="research.html">Research</a>
@@ -45,20 +49,24 @@
              <li class="nav-item" id="projects">
                <a class="nav-link" href="projects.html">Projects</a>
              </li>
+             <li class="nav-item" id="teaching">
+               <a class="nav-link" href="teaching.html">Teaching</a>
+             </li>
              <li class="nav-item" id="tools">
                <a class="nav-link" href="tools.html">Tools</a>
              </li>
-             <li class="nav-item" id="science-communication">
-               <a class="nav-link" href="science-communication.html">Science Communication</a>
-             </li>
-             <li class="nav-item" id="press-coverage">
-               <a class="nav-link" href="press-coverage.html">Press Coverage</a>
-             </li>
-             <li class="nav-item" id="opportunities">
-               <a class="nav-link" href="opportunities.html">Opportunities</a>
+             <li class="nav-item dropdown" id="outreach">
+               <a class="nav-link dropdown-toggle" href="#" id="outreachDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach<i class="fa-solid fa-chevron-down"></i></a>
+               <ul class="dropdown-menu" aria-labelledby="outreachDropdown">
+                 <li><a class="dropdown-item" href="science-communication.html">Science Communication</a></li>
+                 <li><a class="dropdown-item" href="press-coverage.html">Press Coverage</a></li>
+               </ul>
              </li>
              <li class="nav-item" id="contact">
                <a class="nav-link" href="contact.html">Contact</a>
+             </li>
+             <li class="nav-item" id="opportunities">
+               <a class="nav-link nav-cta" href="opportunities.html">Join the lab</a>
              </li>
            </ul>
            </div>
@@ -66,12 +74,14 @@
        </div>
      </div>
 
-
- <!------------------------------------------intro title section ------------------------->
-<div class=" position-relative d-flex align-items-center justify-content-center py-5">
-    <h1 class="display-1 shape-bg-title text-uppercase text-white" style="-webkit-text-stroke: 0.2px #dee2e6;font-size:5rem;font-weight:900">Research</h1>
-    <h1 class="intro_title position-absolute">Research</h1>
-</div>
+ <!------------------------------------------ page title section ------------------------->
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Publications</span>
+    <h1>Research</h1>
+    <p>Peer-reviewed articles and preprints from the lab and our collaborators.</p>
+  </div>
+</header>
 
 
 
@@ -90,10 +100,10 @@
                                   <span class="title-line"></span>
                                  </h2>
                                     <p class="pt-2">
-                                        Below, my publications on scientific journals and the links to all the articles. For more details, visit my 
-                                        <a target="_blank" href="https://scholar.google.es/citations?user=bQ8MC9AAAAAJ&hl=en&oi=ao">Google Scholar</a> 
-                                        page or follow me on 
-                                        <a target="_blank" href="https://www.researchgate.net/profile/Cecilia-Padilla-Iglesias">ResearchGate</a>. 
+                                        Below, publications from the lab with links to all the articles. For the full list, see Cecilia's
+                                        <a target="_blank" href="https://scholar.google.es/citations?user=bQ8MC9AAAAAJ&hl=en&oi=ao">Google Scholar</a>
+                                        or
+                                        <a target="_blank" href="https://www.researchgate.net/profile/Cecilia-Padilla-Iglesias">ResearchGate</a> profiles. Lab members' names are in bold. 
                                         <br><em>*Denotes joint first authorship.</em>
                                       </p>
                                </div>
@@ -121,6 +131,37 @@
                     <div id="publicationsContainer" class="publications-grid">
 
                     <!-- 2026 Publications -->
+
+                    <div class="publication-card card" data-year="2026">
+                        <div class="card-body position-relative">
+                            <span class="year-badge">2026</span>
+                            <div class="content_title">
+                                <h4 class="card-title">geoGraph: Connectivity modelling across geographic space with hexagonal discrete global grids</h4>
+                            </div>
+                            <p class="card-text">
+                                Jud, D.C., Carter, E.J., Pozzi, A.V., Pelanek, O., Fatima, A., Colucci, M., <span class="author-highlight">Padilla-Iglesias, C.</span>, Leonardi, M., Chang, S., Gunasekaram, C., Vinicius, L., Migliano, A.B., Jombart, T., &amp; Manica, A.
+                                <br>
+                                <span class="journal-name">bioRxiv</span>.
+                            </p>
+                            <a target="_blank" href="https://www.biorxiv.org/content/10.64898/2026.10.14.759071v1" class="btn btn-publication">View Article</a>
+                        </div>
+                    </div>
+
+                    <div class="publication-card card" data-year="2026">
+                        <div class="card-body position-relative">
+                            <span class="year-badge">2026</span>
+                            <div class="content_title">
+                                <h4 class="card-title">Bridging material culture networks and social networks in archaeology</h4>
+                            </div>
+                            <p class="card-text">
+                                Bischoff, R.J., &amp; <span class="author-highlight">Padilla-Iglesias, C.</span>
+                                <br>
+                                <span class="journal-name">PLOS ONE</span>, 21(10), e0358860.
+                            </p>
+                            <a target="_blank" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0358860" class="btn btn-publication">View Article</a>
+                        </div>
+                    </div>
+
 
                     <div class="publication-card card" data-year="2026">
                          <div class="card-body position-relative">
@@ -289,22 +330,6 @@
                             </p>
                             <a target="_blank" href="https://doi.org/10.1101/2025.10.03.680393" class="btn btn-publication">View Article</a>
                         </div>
-                        </div>
-
-
-                        <div class="publication-card card" data-year="2025">
-                        <div class="card-body position-relative">
-                            <span class="year-badge">2025</span>
-                            <div class="content_title">
-                                <h4 class="card-title">Bridging Material Culture Networks and Social Networks in Archaeology</h4>
-                            </div>
-                            <p class="card-text">
-                                Bischoff, R.J., & <span class="author-highlight">Padilla-Iglesias, C.</span>
-                                <br>
-                                <span class="journal-name">SocArXiv</span>.
-                            </p>
-                            <a target="_blank" href="https://doi.org/10.31235/osf.io/wjsyg_v1" class="btn btn-publication">View Article</a>
-                            </div>
                         </div>
   
                         <!-- 2024 Publications -->
@@ -661,18 +686,44 @@
    
 </section>
      -->
- <!------------------------------------------ footer section ------------------------->
-<footer class="bg-dark p-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="footer_content ">
-                <p class="text-white text-center">Copyright © 2026 Cecilia Padilla-Iglesias | All Rights Reserved</p>
-          </div>
-        </div>
+  <!------------------------------------------ footer section ------------------------->
+<footer class="lab-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <img class="footer-logo mb-3" src="assets/images/gps-logo-cream.png" alt="GPS Lab logo">
+        <p>Genotype-Phenotype Evolution in Space. Human Origins Cluster of Excellence, University of Tübingen.</p>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>The lab</h6>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>More</h6>
+        <ul>
+          <li><a href="science-communication.html">Science Communication</a></li>
+          <li><a href="press-coverage.html">Press Coverage</a></li>
+          <li><a href="opportunities.html">Join the lab</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Find us</h6>
+        <p>Hölderlinstrasse 12, Office S558<br>72074 Tübingen, Germany</p>
+        <p class="mt-2"><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
       </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p class="text-center">Copyright © 2026 GPS Lab, University of Tübingen | All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
   
 
 
@@ -706,7 +757,7 @@
         });
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
 

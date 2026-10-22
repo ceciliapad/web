@@ -4,39 +4,44 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cecilia Padilla-Iglesias - Opportunities</title>
-    <!-- Bootstrap CSS -->
+    <title>Join the lab | GPS Lab</title>
+    <meta name="description" content="Open opportunities for MSc, PhD, postdoctoral and internship projects in the GPS Lab.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- custom CSS -->
     <link rel="stylesheet" href="./assets/css/custom.css">
-
   </head>
+
   <body>
 
-   <!----------------------------------- top banner --------------------------------->
+ <!----------------------------------- top banner --------------------------------->
 <div class="top_banner">
-  <div class="container">
-   <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a> or <a href="mailto:cp654@cam.ac.uk">cp654@cam.ac.uk</a></p>
-  </div>
+ <div class="container">
+  <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i>Interested in joining the lab? Email <a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
  </div>
- 
-<!------------------------------------------ Navbar section ------------------------->
+</div>
+
+ <!------------------------------------------ Navbar section ------------------------->
      <div class="Navbarr navbar-light bg-white py-2 sticky-top shadow-sm">
        <div class="container">
-         <nav class="navbar navbar-expand-lg">
-            <!-- Brand Name -->
-           <a class="profile-name" href="index.html">Cecilia Padilla-Iglesias, PhD</a>
-           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" ainteresta-controls="navbarNav" ainteresta-expanded="false" ainteresta-label="Toggle navigation">
+         <nav class="navbar navbar-expand-xl">
+            <!-- Brand -->
+           <a class="navbar-brand-logo" href="index.html"><img src="assets/images/gps-logo.png" alt="GPS Lab: Genotype-Phenotype Evolution in Space"></a>
+           <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="toggler-icon top-bar"></span>
              <span class="toggler-icon middle-bar"></span>
              <span class="toggler-icon bottom-bar"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-xl-center">
               <!-- Navbar items -->
              <li class="nav-item" id="home">
-               <a class="nav-link" ainteresta-current="page" href="index.html">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
+             </li>
+             <li class="nav-item" id="team">
+               <a class="nav-link" href="team.html">Team</a>
              </li>
              <li class="nav-item" id="research">
                <a class="nav-link" href="research.html">Research</a>
@@ -44,20 +49,24 @@
              <li class="nav-item" id="projects">
                <a class="nav-link" href="projects.html">Projects</a>
              </li>
+             <li class="nav-item" id="teaching">
+               <a class="nav-link" href="teaching.html">Teaching</a>
+             </li>
              <li class="nav-item" id="tools">
                <a class="nav-link" href="tools.html">Tools</a>
              </li>
-             <li class="nav-item" id="science-communication">
-               <a class="nav-link" href="science-communication.html">Science Communication</a>
-             </li>
-             <li class="nav-item" id="press-coverage">
-               <a class="nav-link" href="press-coverage.html">Press Coverage</a>
-             </li>
-             <li class="nav-item" id="opportunities">
-               <a class="nav-link" href="opportunities.html">Opportunities</a>
+             <li class="nav-item dropdown" id="outreach">
+               <a class="nav-link dropdown-toggle" href="#" id="outreachDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach<i class="fa-solid fa-chevron-down"></i></a>
+               <ul class="dropdown-menu" aria-labelledby="outreachDropdown">
+                 <li><a class="dropdown-item" href="science-communication.html">Science Communication</a></li>
+                 <li><a class="dropdown-item" href="press-coverage.html">Press Coverage</a></li>
+               </ul>
              </li>
              <li class="nav-item" id="contact">
                <a class="nav-link" href="contact.html">Contact</a>
+             </li>
+             <li class="nav-item" id="opportunities">
+               <a class="nav-link nav-cta" href="opportunities.html">Join the lab</a>
              </li>
            </ul>
            </div>
@@ -65,56 +74,121 @@
        </div>
      </div>
 
- <!------------------------------------------intro title section ------------------------->
- <div class=" position-relative d-flex align-items-center justify-content-center py-5">
-  <h1 class="display-1 shape-bg-title text-uppercase text-white" style="-webkit-text-stroke: 0.2px #dee2e6;font-size:5rem;font-weight:900">Opportunities</h1>
-  <h1 class="intro_title position-absolute">Opportunities</h1>
-</div>
-
-
-
-<section>
-  <div class="press_coverage py-5 bg-light">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-7 order-md-2">
-          <div class="opportunites_img p-md-4 text-center">
-            <img class="img-fluid" src="assets/images/GPS_fixed.png" alt="GPS Lab logo">
-          </div>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <div class="link-highlight">
-            <div class="opportunies_content">
-              <h3 class="py-3">Come join the GPS Lab!</h3>
-              <p>I am always interested in hearing from curious and motivated PhD students and postdocs who want to explore questions about human population dynamics and evolution, using creative and interdisciplinary methods.</p>
-              <p>Research in the lab focuses on topics such as what drives human population dynamics, how climate change shaped interactions within and between human populations, the consequences of inter-species interactions for our genome, culture, and morphology, how humans adapted to such a wide range of ecosystems, and how traces of past behaviour can be recovered from the archaeological record.</p>
-              <p>If your ideas align with those of the lab, please send me an email to discuss possibilities. I am always happy to hear from prospective students and postdocs. Specific PhD and postdoctoral opportunities will also be advertised soon.</p>
-            </div>
-          </div>
+ <!------------------------------------------ page title section ------------------------->
+<header class="page-hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="eyebrow">Opportunities</span>
+        <h1>Come join the GPS Lab!</h1>
+        <p>We are always looking for curious and motivated people who want to explore how humans and other hominins evolved, moved and adapted, using creative and interdisciplinary methods. If our questions excite you, get in touch.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a class="btn-lab-cream" href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de?subject=Joining%20the%20GPS%20Lab">Email Cecilia</a>
+          <a class="btn-lab-cream" style="background: transparent; color: var(--cream);" href="#positions">See positions</a>
         </div>
       </div>
+      <div class="col-lg-4 text-center d-none d-lg-block">
+        <img src="assets/images/gps-badge.png" alt="GPS Lab badge" style="width: 260px;">
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+ <!------------------------------------------ topics section ------------------------->
+<section class="py-5">
+  <div class="container py-md-4">
+    <div class="section-heading">
+      <span class="eyebrow">What you could work on</span>
+      <h2>Research themes</h2>
+      <p>Projects in the lab can draw on population genetics, computational modelling, archaeology and fieldwork. Broadly, we are interested in:</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6"><div class="topic-chip"><i class="fas fa-route"></i><span>What drives human population dynamics and mobility</span></div></div>
+      <div class="col-md-6"><div class="topic-chip"><i class="fas fa-people-arrows"></i><span>Interactions within and between human populations and other hominins, and their consequences for our genome, culture and morphology</span></div></div>
+      <div class="col-md-6"><div class="topic-chip"><i class="fas fa-cloud-sun-rain"></i><span>How humans and other primates adapted to diverse environments and changing climates</span></div></div>
+      <div class="col-md-6"><div class="topic-chip"><i class="fas fa-digging"></i><span>How traces of past behaviour can be recovered from the archaeological record</span></div></div>
+    </div>
+    <p class="mt-4 link-highlight">These are broad themes rather than fixed projects. If any of them sparks your curiosity, <a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de?subject=Joining%20the%20GPS%20Lab">get in touch</a> and we can work through ideas together to shape a project that fits your interests.</p>
+  </div>
+</section>
+
+
+
+ <!------------------------------------------ positions section ------------------------->
+<section class="bg-cream py-5" id="positions">
+  <div class="container py-md-4">
+    <div class="section-heading text-center">
+      <span class="eyebrow">Ways to join</span>
+      <h2>Opportunities at every career stage</h2>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="position-card">
+          <div class="position-icon"><i class="fas fa-book-open"></i></div>
+          <h3>MSc theses</h3>
+          <p>Master's students, including from the ASHE programme in Tübingen, are welcome to do their thesis research with us on any of the lab's topics.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="position-card">
+          <div class="position-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>PhD projects</h3>
+          <p>We welcome prospective PhD students interested in developing their own project within the lab's research themes. Specific funded PhD positions will be advertised here.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="position-card">
+          <div class="position-icon"><i class="fas fa-flask"></i></div>
+          <h3>Postdoc fellowships</h3>
+          <p>We are happy to support applications for independent postdoctoral fellowships hosted in the lab, such as:</p>
+          <ul class="fellowship-list">
+            <li><a target="_blank" href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin">DFG</a> Walter Benjamin Programme</li>
+            <li><a target="_blank" href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship">Humboldt</a> Research Fellowship</li>
+            <li><a target="_blank" href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">MSCA</a> Postdoctoral Fellowships</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="position-card">
+          <div class="position-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Internships</h3>
+          <p>Short research internships are a great way to gain hands-on experience with genetic data, modelling or archaeological datasets, and to see whether research is for you.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section>
-  <div class="press_coverage py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-7">
-          <div class="opportunites_img p-md-4">
-                <img class="img-fluid" src="assets/images/field_course.jpg" alt="">
-          </div>
+
+
+ <!------------------------------------------ how to apply section ------------------------->
+<section class="py-5">
+  <div class="container py-md-4">
+    <div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="section-heading mb-4">
+          <span class="eyebrow">How to get in touch</span>
+          <h2>Interested? Send an email</h2>
         </div>
-        <div class="col-md-5">
-          <div class="link-highlight">
-            <div class="opportunies_content">
-              <h3 class="py-3">Field course in Kenya</h3>
-              <p>In collaboration with the organization <i><a target="_blank" href="https://www.bio-mas.org/">Biomas,</a></i> and Olympia Campbell, I'm organising a two week field course in Kenya called: <strong>"Socio-ecology of hunter-gatherer and nomadic populations in a changing world"</strong>. The primary goal  is to expose students to the value of conducting fieldwork in evolutionary and behavioural ecology or any other aspect of biological anthropology among societies living nomadic lifestyles or that have only recently transitioned to sedentism.</p>
-              <p>Students will be introduced to key research questions and themes that can be explored in collaboration with communities living in different geographical and ecological regions in Kenya, as well as the methodologies used to conduct such research in an ethical and rigorous manner.</p>
-              <p>We are planning the first edition to take place in summer 2026 - so stay tuned for news!</p>
-            </div>
-         </div>
+        <ol class="apply-steps">
+          <li>Write to <a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de?subject=Joining%20the%20GPS%20Lab" style="color: var(--navy); font-weight: 700;">cecilia.padilla-iglesias@uni-tuebingen.de</a>, saying which kind of position you are interested in.</li>
+          <li>Tell us briefly about your background and the questions or topics that excite you.</li>
+          <li>Attach your CV. For fellowships, mention the scheme and its deadline so we can plan the application together.</li>
+        </ol>
+      </div>
+      <div class="col-lg-6">
+        <div class="cta-band text-center">
+          <img class="cta-badge" src="assets/images/gps-badge.png" alt="">
+          <h2 class="mb-3 position-relative">We look forward to hearing from you</h2>
+          <p class="mb-4 position-relative">Prospective students, postdocs and interns are always welcome to reach out.</p>
+          <a class="btn-lab-cream position-relative" href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de?subject=Joining%20the%20GPS%20Lab">Email Cecilia</a>
         </div>
       </div>
     </div>
@@ -123,24 +197,46 @@
 
 
  <!------------------------------------------ footer section ------------------------->
- <footer class="bg-dark p-4">
+<footer class="lab-footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer_content ">
-              <p class="text-white text-center">Copyright © 2026 Cecilia Padilla-Iglesias | All Rights Reserved</p>
-        </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <img class="footer-logo mb-3" src="assets/images/gps-logo-cream.png" alt="GPS Lab logo">
+        <p>Genotype-Phenotype Evolution in Space. Human Origins Cluster of Excellence, University of Tübingen.</p>
       </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>The lab</h6>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>More</h6>
+        <ul>
+          <li><a href="science-communication.html">Science Communication</a></li>
+          <li><a href="press-coverage.html">Press Coverage</a></li>
+          <li><a href="opportunities.html">Join the lab</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Find us</h6>
+        <p>Hölderlinstrasse 12, Office S558<br>72074 Tübingen, Germany</p>
+        <p class="mt-2"><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="text-center">Copyright © 2026 GPS Lab, University of Tübingen | All Rights Reserved</p>
     </div>
   </div>
 </footer>
 
-
-
-
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
 

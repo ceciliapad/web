@@ -4,39 +4,44 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cecilia Padilla-Iglesias - Projects</title>
+    <title>Projects | GPS Lab</title>
+    <meta name="description" content="Current and past projects of the GPS Lab.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- custom CSS -->
     <link rel="stylesheet" href="./assets/css/custom.css">
-
   </head>
+
   <body>
 
-   <!----------------------------------- top banner --------------------------------->
+ <!----------------------------------- top banner --------------------------------->
 <div class="top_banner">
-  <div class="container">
-   <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a> or <a href="mailto:cp654@cam.ac.uk">cp654@cam.ac.uk</a></p>
-  </div>
+ <div class="container">
+  <p class="py-2"><i class="fa-solid pe-2 fa-envelope-open-text"></i>Interested in joining the lab? Email <a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
  </div>
- 
-<!------------------------------------------ Navbar section ------------------------->
+</div>
+
+ <!------------------------------------------ Navbar section ------------------------->
      <div class="Navbarr navbar-light bg-white py-2 sticky-top shadow-sm">
        <div class="container">
-         <nav class="navbar navbar-expand-lg">
-            <!-- Brand Name -->
-           <a class="profile-name" href="index.html">Cecilia Padilla-Iglesias, PhD</a>
-           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" ainteresta-controls="navbarNav" ainteresta-expanded="false" ainteresta-label="Toggle navigation">
+         <nav class="navbar navbar-expand-xl">
+            <!-- Brand -->
+           <a class="navbar-brand-logo" href="index.html"><img src="assets/images/gps-logo.png" alt="GPS Lab: Genotype-Phenotype Evolution in Space"></a>
+           <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="toggler-icon top-bar"></span>
              <span class="toggler-icon middle-bar"></span>
              <span class="toggler-icon bottom-bar"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-xl-center">
               <!-- Navbar items -->
              <li class="nav-item" id="home">
-               <a class="nav-link" ainteresta-current="page" href="index.html">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
+             </li>
+             <li class="nav-item" id="team">
+               <a class="nav-link" href="team.html">Team</a>
              </li>
              <li class="nav-item" id="research">
                <a class="nav-link" href="research.html">Research</a>
@@ -44,20 +49,24 @@
              <li class="nav-item" id="projects">
                <a class="nav-link" href="projects.html">Projects</a>
              </li>
+             <li class="nav-item" id="teaching">
+               <a class="nav-link" href="teaching.html">Teaching</a>
+             </li>
              <li class="nav-item" id="tools">
                <a class="nav-link" href="tools.html">Tools</a>
              </li>
-             <li class="nav-item" id="science-communication">
-               <a class="nav-link" href="science-communication.html">Science Communication</a>
-             </li>
-             <li class="nav-item" id="press-coverage">
-               <a class="nav-link" href="press-coverage.html">Press Coverage</a>
-             </li>
-             <li class="nav-item" id="opportunities">
-               <a class="nav-link" href="opportunities.html">Opportunities</a>
+             <li class="nav-item dropdown" id="outreach">
+               <a class="nav-link dropdown-toggle" href="#" id="outreachDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Outreach<i class="fa-solid fa-chevron-down"></i></a>
+               <ul class="dropdown-menu" aria-labelledby="outreachDropdown">
+                 <li><a class="dropdown-item" href="science-communication.html">Science Communication</a></li>
+                 <li><a class="dropdown-item" href="press-coverage.html">Press Coverage</a></li>
+               </ul>
              </li>
              <li class="nav-item" id="contact">
                <a class="nav-link" href="contact.html">Contact</a>
+             </li>
+             <li class="nav-item" id="opportunities">
+               <a class="nav-link nav-cta" href="opportunities.html">Join the lab</a>
              </li>
            </ul>
            </div>
@@ -65,11 +74,14 @@
        </div>
      </div>
 
- <!------------------------------------------intro title section ------------------------->
- <div class=" position-relative d-flex align-items-center justify-content-center py-5">
-  <h1 class="display-1 shape-bg-title text-uppercase text-white" style="-webkit-text-stroke: 0.2px #dee2e6;font-size:5rem;font-weight:900">Projects</h1>
-  <h1 class="intro_title position-absolute">Projects</h1>
-</div>
+ <!------------------------------------------ page title section ------------------------->
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">What we work on</span>
+    <h1>Projects</h1>
+    <p>Our current projects, carried out alongside a global network of collaborators.</p>
+  </div>
+</header>
 
 
 
@@ -80,13 +92,48 @@
           Current Projects
           <span class="title-line"></span>
       </h2>
-      <p class="pt-2" style="font-size: 17px;">
-        Below, the main projects I'm working on at the moment, alongside a global network of collaborators. Please feel free to write to me if you are interested in any of these topics and/or have any questions!
+      <p class="pt-2 link-highlight" style="font-size: 17px;">
+        Below, the main projects the lab is working on at the moment, alongside a global network of collaborators. Please feel free to <a href="contact.html">get in touch</a> if you are interested in any of these topics or have any questions, and see <a href="opportunities.html">Join the lab</a> if you would like to work on them with us!
       </p>
     </div>
 
       <div class="row g-4">
         <!-- Project cards (same layout as other projects) -->
+
+        <!-- New: Neanderthal-Homo sapiens interactions -->
+        <div class="col-md-6 col-lg-4">
+          <div class="other_project_content h-100">
+            <div class="link-highlight">
+              <img class="img-fluid" src="assets/images/neanderthal-sapiens-interactions.jpg" alt="Illustrated map of Neanderthal and Homo sapiens populations across Eurasia">
+              <div class="content_title"><h4 class="pb-3 pt-2">Interactions between Neanderthals and <em>Homo sapiens</em></h4></div>
+              <p>We investigate Neanderthal population dynamics and how, where and when Neanderthals and <em>Homo sapiens</em> met and interacted, and what these encounters meant for both populations.</p>
+              <p class="project-people">Lab member: Zélie Solan de Renty</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- New: Modelling genotype-phenotype dynamics -->
+        <div class="col-md-6 col-lg-4">
+          <div class="other_project_content h-100">
+            <div class="link-highlight">
+              <img class="img-fluid" src="assets/images/genotype-phenotype.jpg" alt="Fossil hominin jaw with teeth, held in two hands">
+              <div class="content_title"><h4 class="pb-3 pt-2">Modelling genotype-phenotype dynamics</h4></div>
+              <p>We develop spatially explicit models to understand how genetic variation translates into phenotypic diversity, and how demography, climate and selection shape this relationship across space and through time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- New: Climate-driven selection in baboons -->
+        <div class="col-md-6 col-lg-4">
+          <div class="other_project_content h-100">
+            <div class="link-highlight">
+              <img class="img-fluid" src="assets/images/baboons.jpg" alt="Baboons in an East African savanna">
+              <div class="content_title"><h4 class="pb-3 pt-2">Climate-driven selection in baboons</h4></div>
+              <p>In collaboration with Cosimo Posth, we study how past climate change has shaped natural selection in baboons, a primate found across a remarkably wide range of African environments.</p>
+              <p class="project-people">Lab member: Amanda Solbirk Schott</p>
+            </div>
+          </div>
+        </div>
 
         <!-- Project 1 -->
         <div class="col-md-6 col-lg-4">
@@ -94,7 +141,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="assets/images/Admixture.jpg" alt="Admixture Mapping">
               <div class="content_title"><h4 class="py-3">Admixture mapping of African hunter-gatherer ancestry components</h4></div>
-              <p> In collaboration with the <a target="_blank" href="https://ai-page.org/home"> Ioannidis Lab at UCSC </a> I work on using large-scale genomic datasets to explore the contributions of hunter-gatherer ancestry to complex traits and health outcomes.</p>
+              <p> In collaboration with the <a target="_blank" href="https://ioannidislab.ai">Ioannidis Lab</a> at Stanford University we use large-scale genomic datasets to explore the contributions of hunter-gatherer ancestry to complex traits and health outcomes.</p>
             </div>
           </div>
         </div>
@@ -105,7 +152,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="CISGeM">
               <div class="content_title"><h4 class="py-3">Climate Informed Spatial Genetic Modelling (CISGeM)</h4></div>
-              <p>Using paleoclimatic, genetic, archaeological and fossil data, I work on modelling how climate shape human genetic and phenotypic diversity in different places and time periods.</p>
+              <p>Using paleoclimatic, genetic, archaeological and fossil data, we model how climate shaped human genetic and phenotypic diversity in different places and time periods.</p>
             </div>
           </div>
         </div>
@@ -116,7 +163,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="assets/images/genetic_samples.jpeg" alt="Mobility and Diversity">
               <div class="content_title"><h4 class="py-3">Mobility and genetic diversity in Central Africa</h4></div>
-              <p>I'm working on a project examining how patterns of mobility influence genetic diversity and population structure among Central African hunter-gatherers.</p>
+              <p>We examine how patterns of mobility influence genetic diversity and population structure among Central African hunter-gatherers.</p>
             </div>
           </div>
         </div>
@@ -127,7 +174,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80" alt="Technological Transitions">
               <div class="content_title"><h4 class="py-3">Integrating archaeological and genomic data to study cultural evolution</h4></div>
-              <p>In collaboration with the <a target="_blank" href="https://www.gea.mpg.de/15613/human-palaeosystems"> Human Paleosystems Group </a> at the Max Planck Institute of Geoanthropology, I integrate genomic and archaeological data to understand how changing population dynamics shape cultural evolution. </p>
+              <p>In collaboration with the <a target="_blank" href="https://www.gea.mpg.de/15613/human-palaeosystems"> Human Paleosystems Group </a> at the Max Planck Institute of Geoanthropology, we integrate genomic and archaeological data to understand how changing population dynamics shape cultural evolution. </p>
             </div>
           </div>
         </div>
@@ -138,7 +185,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="assets/images/archaeological_assemblage.jpg" alt="Mobility Archaeology">
               <div class="content_title"><h4 class="py-3">Mobility and settlement in the archaeological record</h4></div>
-              <p>Alongisde Prof. Matt Grove and Dr. James Blinkhorn from the University of Liverpool, I work on developing methods to recover signals of mobility, aggregation, and dispersal from lithic assemblages and site structures.</p>
+              <p>Alongside Prof. Matt Grove and Dr. James Blinkhorn from the University of Liverpool, we develop methods to recover signals of mobility, aggregation, and dispersal from lithic assemblages and site structures.</p>
             </div>
           </div>
         </div>
@@ -149,7 +196,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="assets/images/settlement.jpeg" alt="Settlement Transitions">
               <div class="content_title"><h4 class="py-3">Settlement transitions in East Africa</h4></div>
-              <p> Dr Olympia Campbell from the Institute of Advanced Studies in Toulouse and I are investigating the causes and consequences of changes in mobility and spatial organization in Northern Kenya.</p>
+              <p> Together with Dr Olympia Campbell from the Institute for Advanced Study in Toulouse, we investigate the causes and consequences of changes in mobility and spatial organization in Northern Kenya.</p>
             </div>
           </div>
         </div>
@@ -160,7 +207,7 @@
             <div class="link-highlight">
               <img class="img-fluid" src="https://images.unsplash.com/photo-1470114716159-e389f8712fda?auto=format&fit=crop&w=600&q=80" alt="Central Place Foraging">
               <div class="content_title"><h4 class="py-3">Evolutionary origins of central place foraging</h4></div>
-              <p> Dr Ketika Garg from Caltech and I are using computational models to try to understand how central place foraging may have evolved in the genus <em>Homo</em>.</p>
+              <p> Together with Dr Ketika Garg from Caltech, we use computational models to understand how central place foraging may have evolved in the genus <em>Homo</em>.</p>
             </div>
           </div>
         </div>
@@ -173,11 +220,11 @@
 
  <!------------------------------------------ other project section ------------------------->
  <section>
-    <div class="other_project">
+    <div class="other_project pb-5">
       <div class="container">
         <div class="Headline py-md-5 my-md-0 my-4 pb-3">
           <h2 style="width: 400px; font-size: 30px; font-weight: 800; position: relative; display: inline-block;">
-            Some (other) projects I have worked on in the past
+            Past projects
             <span class="title-line"></span>
            </h2>
          </div>
@@ -189,7 +236,7 @@
                  <div class="content_title">
                   <h4 class="py-3">Diversity in early learning experiences</h4>
                  </div>
-                <p>I have worked since 2019 in the Yucatán peninsula in collaboration with <a target="_blank" href="https://www.plu.edu/psychology/staff/laura-shneidman/">Dr Laura Shneidman</a> on how changing socio-ecologies affect social and cultural practices. See <a href="research.html">Research</a> for some of the publications from this project.</p>
+                <p>Since 2019, Cecilia has worked in the Yucatán peninsula in collaboration with <a target="_blank" href="https://www.plu.edu/psychology/staff/laura-shneidman/">Dr Laura Shneidman</a> on how changing socio-ecologies affect social and cultural practices. See <a href="research.html">Research</a> for some of the publications from this project.</p>
               </div>
             </div>
           </div>
@@ -200,7 +247,7 @@
                  <div class="content_title">
                   <h4 class="py-3">Hunter-gatherers' lifestyles in archaeology</h4>
                  </div>
-                <p>In collaboration with <a target="_blank" href="https://search.asu.edu/profile/3262845"> Robert Bischoff</a> and <a href="https://search.asu.edu/profile/1379997">Dr Claudine Gravel-Miguel,</a> I worked on creating a computational model to understand how the lifestyles of hunter-gatherers get reflected in archaeological assemblages (see <a href="research.html">Research</a>).</p>
+                <p>In collaboration with <a target="_blank" href="https://search.asu.edu/profile/3262845"> Robert Bischoff</a> and <a href="https://search.asu.edu/profile/1379997">Dr Claudine Gravel-Miguel,</a> Cecilia created a computational model to understand how the lifestyles of hunter-gatherers get reflected in archaeological assemblages (see <a href="research.html">Research</a>).</p>
               </div>
             </div>
           </div>
@@ -211,7 +258,7 @@
                  <div class="content_title">
                   <h4 class="py-3">Emergence of complex social networks from foraging behaviour</h4>
                  </div>
-                <p>Alongside <a target="_blank" href="https://ketikagarg.github.io/"> Dr Ketika Garg,</a> Nicolás Restrepo Ochoa and Bleu Knight, I developed an agent-based model to understand the social networks emerging from hunter-gatherer foraging behaviour. See <a href="research.html">Research</a> for our paper.</p>
+                <p>Alongside <a target="_blank" href="https://ketikagarg.github.io/"> Dr Ketika Garg,</a> Nicolás Restrepo Ochoa and Bleu Knight, Cecilia developed an agent-based model to understand the social networks emerging from hunter-gatherer foraging behaviour. See <a href="research.html">Research</a> for our paper.</p>
               </div>
             </div>
           </div>
@@ -227,7 +274,7 @@
                  <div class="content_title">
                   <h4 class="py-3">Genetic markers of cousin marriage and honour cultures</h4>
                  </div>
-                <p>I have collaborated with Olympia Campbell and Prof Ruth Mace to explore the relationship between cousin marriage, intensive kinship and honour cultures.  See <a href="research.html">Research</a> for our paper.</p>
+                <p>Cecilia collaborated with Olympia Campbell and Prof Ruth Mace to explore the relationship between cousin marriage, intensive kinship and honour cultures.  See <a href="research.html">Research</a> for our paper.</p>
               </div>
             </div>
           </div>
@@ -238,7 +285,7 @@
                  <div class="content_title">
                   <h4 class="py-3">Spatio-temporally explicit models of mobility and cultural evolution</h4>
                  </div>
-                <p>Alongside <a target="_blank" href="https://www.zib.de/members/natasa.conrad"> Dr Natasa Conrad </a> and Johaness Zonker, I developed a model to assess how changing ecological landscapes shaped hunter-gatherer demography, mobility and cultural evolution. See <a href="research.html">Research</a> for our paper.</p>
+                <p>Alongside <a target="_blank" href="https://www.zib.de/members/natasa.conrad"> Dr Natasa Conrad </a> and Johaness Zonker, Cecilia developed a model to assess how changing ecological landscapes shaped hunter-gatherer demography, mobility and cultural evolution. See <a href="research.html">Research</a> for our paper.</p>
               </div>
             </div>
           </div>
@@ -265,15 +312,41 @@
 
 
 
- <!------------------------------------------ footer section ------------------------->
- <footer class="bg-dark p-4">
+  <!------------------------------------------ footer section ------------------------->
+<footer class="lab-footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer_content ">
-              <p class="text-white text-center">Copyright © 2026 Cecilia Padilla-Iglesias | All Rights Reserved</p>
-        </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <img class="footer-logo mb-3" src="assets/images/gps-logo-cream.png" alt="GPS Lab logo">
+        <p>Genotype-Phenotype Evolution in Space. Human Origins Cluster of Excellence, University of Tübingen.</p>
       </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>The lab</h6>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6>More</h6>
+        <ul>
+          <li><a href="science-communication.html">Science Communication</a></li>
+          <li><a href="press-coverage.html">Press Coverage</a></li>
+          <li><a href="opportunities.html">Join the lab</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Find us</h6>
+        <p>Hölderlinstrasse 12, Office S558<br>72074 Tübingen, Germany</p>
+        <p class="mt-2"><a href="mailto:cecilia.padilla-iglesias@uni-tuebingen.de">cecilia.padilla-iglesias@uni-tuebingen.de</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="text-center">Copyright © 2026 GPS Lab, University of Tübingen | All Rights Reserved</p>
     </div>
   </div>
 </footer>
@@ -281,7 +354,7 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
 
